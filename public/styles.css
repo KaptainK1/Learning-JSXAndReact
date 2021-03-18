@@ -1,0 +1,15 @@
+.heading {
+  color: red;
+}
+
+.mainPictures {
+  height: 100px;
+  width: 100px;
+  display: block;
+}
+
+.extra-pictures {
+  height: 100px;
+  width: 100px;
+  display: inline;
+}
