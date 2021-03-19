@@ -18,11 +18,33 @@ const name = "Dylan";
 const lastInitial = "H";
 const luckyNumber = 8;
 const randomImage = "https://picsum.photos/200";
+var headingGreeting;
+var headingColor;
+
+const date = new Date();
+const hour = date.getHours();
+
+//change the heading color and greeting based off of the hour
+if (hour > 0 && hour < 12) {
+  headingGreeting = "Good Morning";
+  headingColor = { color: "red" };
+} else if (hour >= 12 && hour < 18) {
+  headingGreeting = "Good Afternoon";
+  headingColor = { color: "green" };
+} else {
+  headingGreeting = "Good Evening";
+  headingColor = { color: "blue" };
+}
 
 ReactDOM.render(
   <div>
-    <h1 className="heading" contentEditable="true" spellCheck="false">
-      Hello {name} {lastInitial} asdflkna;ldk!
+    <h1
+      className="heading"
+      style={headingColor}
+      contentEditable="true"
+      spellCheck="false"
+    >
+      {headingGreeting} {name} {lastInitial}!
     </h1>
     <img
       className="mainPictures"
