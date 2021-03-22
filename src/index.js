@@ -1,3 +1,4 @@
+/*
 import React from "react";
 import ReactDOM from "react-dom";
 
@@ -68,5 +69,19 @@ ReactDOM.render(
     <p>Copyright {new Date().getFullYear()}</p>
   </div>,
 
+  document.getElementById("root")
+);
+*/
+
+import React from "react";
+import ReactDOM from "react-dom";
+
+import CustomList from "./CustomList";
+
+ReactDOM.render(
+  <div>
+    <h1>My Favorite Foods</h1>
+    <CustomList />
+  </div>,
   document.getElementById("root")
 );
