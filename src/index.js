@@ -76,12 +76,6 @@ ReactDOM.render(
 import React from "react";
 import ReactDOM from "react-dom";
 
-import CustomList from "./CustomList";
+import App from "./components/App.jsx";
 
-ReactDOM.render(
-  <div>
-    <h1>My Favorite Foods</h1>
-    <CustomList />
-  </div>,
-  document.getElementById("root")
-);
+ReactDOM.render(<App />, document.getElementById("root"));
